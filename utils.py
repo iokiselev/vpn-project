@@ -69,3 +69,14 @@ def make_help_markup() -> telebot.types.InlineKeyboardMarkup:
     itembtn_str = telebot.types.InlineKeyboardButton("Назад", callback_data="back")
     markup.add(itembtn_str)
     return markup
+
+
+def make_buy_inline_button_markup() -> telebot.types.InlineKeyboardMarkup:
+    markup = telebot.types.InlineKeyboardMarkup()
+    stars = telebot.types.InlineKeyboardButton("Telegram Stars", callback_data="buy_tg_stars")
+    crypt = telebot.types.InlineKeyboardButton("Cryptomus", callback_data="buy_cryptomus")
+    yoomoney = telebot.types.InlineKeyboardButton("YooMoney", callback_data="buy_yoomoney")
+    markup.add(stars)
+    markup.add(crypt)
+    markup.add(yoomoney)
+    return markup
