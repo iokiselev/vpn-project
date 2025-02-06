@@ -39,17 +39,17 @@ def make_connect_markup() -> telebot.types.InlineKeyboardMarkup:
     return markup
 
 
-def make_pay_markup() -> telebot.types.InlineKeyboardMarkup:
-    markup = telebot.types.InlineKeyboardMarkup()
-    pay_1_month = telebot.types.InlineKeyboardButton("1 месяц", callback_data="pay_1")
-    markup.add(pay_1_month)
-    pay_4_month = telebot.types.InlineKeyboardButton("4 месяца", callback_data="pay_4")
-    markup.add(pay_4_month)
-    pay_12_month = telebot.types.InlineKeyboardButton("12 месяцев", callback_data="pay_12")
-    markup.add(pay_12_month)
-    itembtn_str = telebot.types.InlineKeyboardButton("Назад", callback_data="back")
-    markup.add(itembtn_str)
-    return markup
+# def make_pay_markup() -> telebot.types.InlineKeyboardMarkup:
+#     markup = telebot.types.InlineKeyboardMarkup()
+#     pay_1_month = telebot.types.InlineKeyboardButton("1 месяц", callback_data="pay_1")
+#     markup.add(pay_1_month)
+#     pay_4_month = telebot.types.InlineKeyboardButton("4 месяца", callback_data="pay_4")
+#     markup.add(pay_4_month)
+#     pay_12_month = telebot.types.InlineKeyboardButton("12 месяцев", callback_data="pay_12")
+#     markup.add(pay_12_month)
+#     itembtn_str = telebot.types.InlineKeyboardButton("Назад", callback_data="back")
+#     markup.add(itembtn_str)
+#     return markup
 
 
 def make_help_markup() -> telebot.types.InlineKeyboardMarkup:
@@ -71,7 +71,7 @@ def make_help_markup() -> telebot.types.InlineKeyboardMarkup:
     return markup
 
 
-def make_buy_inline_button_markup() -> telebot.types.InlineKeyboardMarkup:
+def make_pay_markup() -> telebot.types.InlineKeyboardMarkup:
     markup = telebot.types.InlineKeyboardMarkup()
     stars = telebot.types.InlineKeyboardButton("Telegram Stars", callback_data="buy_tg_stars")
     crypt = telebot.types.InlineKeyboardButton("Cryptomus", callback_data="buy_cryptomus")
