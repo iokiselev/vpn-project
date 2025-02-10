@@ -37,7 +37,7 @@ jobs:
           port: 22
           script: |
             echo "start script"
-            
+            echo "Test"
             DOCKER_USER=${{ secrets.DOCKERHUB_USERNAME }}
             DOCKER_PASS=${{ secrets.DOCKERHUB_TOKEN }}
 
